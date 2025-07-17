@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 06</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Image Gallery</title>
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <p>
+      You can hear Carlos Ruiz Zafon discussing a little bit of his work in this audio:
+      <audio
+        id="interview-audio"
+                src="./media/Bookbits_-_2009-09-17_Carols_Ruiz_Zafon-The_Angel's_Game.vorb.oga"
+      ></audio>
+          <p id="current-time" aria-label="This is Carlos Ruiz Zafon talking about Shadow of the Wind book">Carlos Ruiz Zafon interview</p>
+
+    <section class="myAudioStuff">
+      <button id="play-button">Play</button>
+      <button id="pause-button">Pause</button>
+      <button id="ff-button">FF +10s</button>
+      <button id="rw-button">RW -10s</button>
+    </p>
+
+    <section id="books-container"></section>
+
+    <p>Currently Selected Book</p>
+
+    <section id="current-book"></section>
+  </body>
 </html>
